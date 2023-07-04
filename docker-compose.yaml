@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mining:
+    image: giansalex/monero-miner
+    deploy:
+      replicas: 9
+#      resources:
+#        limits:
+#          cpus: '0.5'
+    environment:
+      WALLET: "48ceZ6ukSwmh9Cikw7fKo1itUKAT5bFj5XPGuQyQ8XmBHi8huPDH8kyFmq5EsXHjToiWQ3UTiW2WcWp4sXLWCUtjRCcPgXe"
